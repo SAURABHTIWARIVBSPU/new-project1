@@ -1,0 +1,14 @@
+    /* Media Query for responsive image size */
+    @media (min-width: 768px) {
+        .w-fill-md {
+            width: 100%;
+        }
+    }
+
+    /* Center logo and display it across the card */
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
