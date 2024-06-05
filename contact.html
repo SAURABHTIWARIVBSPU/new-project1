@@ -10,68 +10,25 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Include Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
+    
+    <style>
+        /* Custom CSS */
+        /* Adjustments for Contact Form */
+        .contact-form {
+            border-radius: 10px;
+            
+        }
 
+        /* Form Container Shadow */
+        .contact-form-container {
+            box-shadow: 5px px 5px rgba(0, 0, 0, 0.1);
+        }
 
-<body class="font-roboto bg-gradient-to-r from-green-500 via-blue-400 to-purple-300 ">
-    <header class=" bg-gradient-to-r from-green-400 via-yellow-400 to-red-300 border-b-2 border-black-400 text-white navbar">
-        <div class="container mx-auto py-4 px-6 md:py-6 flex justify-between items-center">
-            <img src="logonamebig.png" alt="" class="h-10 md:h-12 ">
-        </div>
-    </header>
-
-    <div class="container mx-auto flex justify-center items-center min-h-screen ">
-        <div class="max-w-md w-full bg-green-200 shadow-lg rounded-lg overflow-hidden border-b-2 border-black-200 bg-gradient-to-r from-yellow-500 via-red-200 to-purple-300">
-            <div class="px-10 py-8  bg-gradient-to-r from-purple-600 via-pink-700 to-red-500 bg-gradient-to-l from-purple-50 via-pink-100 to-red-500 ">
-                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Us</h2>
-                <form id="contactForm" class="space-y-4 " enctype="multipart/form-data">
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700 ">Name</label>
-                        <input type="text" id="name" name="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                        <input type="email" id="email" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                    </div>
-                    <div>
-                        <label for="mobile" class="block text-sm font-medium text-gray-700">Mobile Number</label>
-                        <input type="tel" id="mobile" name="mobile" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                    </div>
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"></textarea>
-                    </div>
-                    <div>
-                        <label for="file" class="block text-sm font-medium text-gray-700">Attach File</label>
-                        <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .pdf, .doc, .docx" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                    </div>
-                    <div>
-                        <button type="submit" class="w-full py-2 px-4 bg-indigo-600 text-white font-semibold rounded-md hover:bg-green-700 focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <footer class="bg-gradient-to-r from-yellow-500 via-red-200 to-purple-300 text-black-200 py-8 border-b-2 border-red-800">
-        <div class="container mx-auto text-center">
-            <p class="text-sm mb-4 font-bold">&copy; 2024 Saurabh Tiwari. All rights reserved.</p>
-            <nav>
-                <ul class="flex justify-center space-x-6">
-                    <li><a href="#" class="hover:text-blue-500 transition duration-200">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:text-blue-500 transition duration-200">Terms of Service</a></li>
-                    <li><a href="https://saurabh-tiwari.netlify.app/" class="hover:text-blue-500 transition duration-200">About</a></li>
-                    <li><a href="#" class="hover:text-blue-500 transition duration-200">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-    <script>
-        // JavaScript functionalities can be added here
-        // For changing background color
-        document.body.style.backgroundColor = "";
-    </script>
-
+        /* Submit Button Hover Effect */
+        .submit-btn:hover {
+            background-color: #0606ff;
+        }
+    </style>
 <!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
@@ -108,8 +65,76 @@
 	else {
 		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
 	}
+
 	// ]]>
 </script>
-</body>
+</head>
 
-</html>
+<body class=" font-muli bg-gray-200">
+    <header class="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white shadow-lg">
+        <div class="container mx-auto py-4 px-6 md:py-6 flex justify-between items-center">
+            <img src="logonamebig.png" alt="Logo" class="h-10 md:h-12">
+            <nav>
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+                    <li><a href="https://saurabh-tiwari.netlify.app/" class="hover:text-blue-600">About</a></li>
+                    <li><a href="https://github.com/SAURABHTIWARIVBSPU" class="hover:text-blue-600">Services</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=918948905711" target="_blank">Contact Me</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <body class="bg-gray-200">
+    
+
+<div class="container mx-auto flex justify-center items-center min-h-screen px-4 sm:px-6 lg:px-8 bg-gray-200">
+    <div class="w-full max-w-md contact-form-container shadow-lg p-4 mt-10 bg-white rounded-lg bg-gradient-to-r from-red-200 to-green-200 via-blue-400">
+        <div class="px-6 py-6 bg-gradient-to-r from-purple-100 to-gray-200 rounded-lg contact-form border border-black-500">
+            <h2 class="text-2xl font-semibold mb-4 text-center text-gray-800">Contact Us</h2>
+            <form id="contactForm" class="space-y-4" enctype="multipart/form-data">
+                <div>
+                    <label for="name" class="block text-md font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" class="mt-1 block w-full min-w-[200px] px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                </div>
+                <div>
+                    <label for="email" class="block text-md font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" class="mt-1 block w-full min-w-[200px] px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                </div>
+                <div>
+                    <label for="mobile" class="block text-md font-medium text-gray-700">Mobile Number</label>
+                    <div class="flex mt-1">
+                        <select id="countryCode" name="countryCode" class="block w-1/3 min-w-[70px] px-3 py-2 border border-gray-300 rounded-l-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                            <option value="+1">+1 (USA)</option>
+                            <option value="+44">+44 (UK)</option>
+                            <option value="+91">+91 (India)</option>
+                            <option value="+61">+61 (Australia)</option>
+                            <option value="+81">+81 (Japan)</option>
+                            <!-- Add more country codes as needed -->
+                        </select>
+                        <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" class="block w-2/3 min-w-[130px] px-3 py-2 border border-gray-300 rounded-r-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    </div>
+                </div>
+                <div>
+                    <label for="message" class="block text-md font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="3" placeholder="Enter your message" class="mt-1 block w-full min-w-[200px] px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"></textarea>
+                </div>
+                <div>
+                    <label for="file" class="block text-md font-medium text-gray-700">Attach File</label>
+                    <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .pdf, .doc, .docx" class="mt-1 block w-full min-w-[200px] px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                </div>
+                <div>
+                    <button type="submit" class="w-full py-2 px-3 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50 transition ease-in-out duration-150 submit-btn">Submit</button>
+                </div>
+            </form>
+            <div id="successMessage" class="hidden text-green-600 text-center font-medium mt-4">Your message has been sent successfully!</div>
+        </div>
+    </div>
+</div>
+
+    <footer class="bg-gradient-to-r from-purple-600 to-indigo-700 text-white shadow-lg mt-10">
+        <div class="container mx-auto text-center py-6">
+            <p class="text-sm font-bold">&copy; 2024 Saurabh Tiwari. All rights reserved.</p>
+            <nav>
+                <ul class="flex justify-center space-x-6
