@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,103 +11,121 @@
     <script src="script.js"></script>
     <style>
         /* Custom CSS styles can be added here */
-        /* Adjust shadow for navbar */
         .navbar {
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        /* Media Query for responsive image size */
         @media (min-width: 768px) {
             .w-fill-md {
                 width: 100%;
             }
         }
+
+        .hover-custom:hover {
+            background-color: #4A5568; /* Darker gray */
+            color: #E2E8F0; /* Lighter gray */
+            transform: translateY(-5px); /* Lift effect */
+        }
+
+        .nav-hover:hover {
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+            color: #e7acac;
+        }
+
+        .card-gradient {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .card-hover:hover {
+            background: linear-gradient(90deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        /* Impressive gradient for the body section */
+        body {
+            background: linear-gradient(120deg, #e4ece7 0%, #8fd3f4 100%);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Impressive gradient for the card section */
+        .card {
+            background: linear-gradient(135deg, #b8f9f3 0%, #fad0c4 100%);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
     </style>
 
     <!-- Meta Tags for SEO -->
     <meta name="description" content="Stay updated with the latest exam schedules and results from Uttar Pradesh Madhyamik Shiksha Parishad (UPMSP). Access essential resources for students, parents, and educators. Your gateway to educational excellence in Uttar Pradesh.">
     <meta name="keywords" content="UPMSP, Uttar Pradesh education, exam schedules, results, educational resources">
 </head>
-
-<body class="bg-gray-50">
-    <header class="bg-gradient-to-r from-green-400 to-blue-500 text-white shadow-md py-4 px-6 flex justify-between items-center">
-        <div class="container mx-auto py-2 px-4 md:py-6 md:px-4 flex justify-between items-center">
-            <img src="logonamebig.png" alt="" class="h-10 md:h-12">
-            <!-- Adjusted navbar for smaller screens -->
-            <button class="md:hidden focus:outline-none">
-                <!-- Hamburger icon for mobile -->
-                <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path fill-rule="evenodd" d="M3 5h18v1H3V5zm0 6h18v1H3v-1zm0 6h18v1H3v-1z"></path>
-                </svg>
-            </button>
-            <nav class="hidden md:flex space-x-6 md:space-x-20 text-lg font-semibold">
-                <a class="hover:text-blue-800 transition duration-200 px-3 py-2 rounded-md hover:bg-red-700" href="/">Home</a>
-                <a href="https://saurabh-tiwari.netlify.app/" class="hover:text-blue-800 transition duration-200 px-3 py-2 rounded-md hover:bg-red-700">About</a>
-                <a class="hover:text-blue-800 transition duration-200 px-3 py-2 rounded-md hover:bg-red-700" href="/">Contact</a>
+<body class="bg-gradient-to-r from-blue-400 via-blue-300 to-green-100">
+    <header class="bg-gradient-to-r from-green-500 to-teal-600 text-white shadow-xl py-4 px-6 flex justify-between items-center">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="logonamebig.png" alt="Logo" class="h-12">
+            
+            <nav class="hidden md:flex space-x-8 text-lg font-semibold">
+                <a class="nav-hover transition duration-200 px-3 py-2 rounded-md bg-white text-black" href="/">Home</a>
+                <a href="https://saurabh-tiwari.netlify.app/" class="nav-hover transition duration-200 px-3 py-2 rounded-md bg-white text-black">About</a>
+                <a href="contact.html" class="nav-hover transition duration-200 px-3 py-2 rounded-md bg-white text-black" href="/">Contact</a>
             </nav>
         </div>
     </header>
-    <div class="container mx-auto mt-3">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div class="bg-gradient-to-r from-yellow-500 via-red-200 to-purple-300 rounded-lg overflow-hidden shadow-md p-6 transform hover:scale-105 transition duration-300">
-                <div class="logo bg-gradient-to-r from-yellow-500 via-red-200 to-purple-300">
-                    <img class="h-40 w-fit object-fit md:h-40 w-fit shadow-sl px-2  " src="logo.png " display:flex aria-colspan="rounded-full" alt="12th Result">
+
+    <div class="container mx-auto mt-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="card-gradient rounded-lg shadow-xl p-8 transform hover:scale-105 transition duration-300 card-hover">
+                <div class="flex justify-center mb-6 ">
+                    <img class="h-48 w-auto object-cover rounded-full shadow-lg" src="logo.png" alt="10th Result">
                 </div>
-                <div class="p-6 bg-gradient-to-r from-yellow-500 via-red-200 to-purple-300">
-                    <h3 class="text-xl font-semibold text-indigo-500 mb-2 bg-gradient-to-r from-yellow-500 via-red-200 to-purple-300">10th Result</h3>
-                    <p class="text-gray-600 mb-4 bg-gradient-to-r from-yellow-500 via-red-200 to-purple-300">Enter your roll number and view your Marks.</p>
-                    <!-- Updated button with reference link -->
-                    <button class="bg-indigo-500 hover:bg-green-300 text-white py-2 px-4 rounded-full bg-yellow-400" onclick="window.open('https://upmsp.edu.in/ResultHighSchool.aspx', '_blank')">Check Result</button>
+                <div class="text-center">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">10th Result</h3>
+                    <p class="text-gray-700 mb-6">Enter your roll number and view your Marks.</p>
+                    <button class="bg-gradient-to-r from-purple-400 to-indigo-600 hover:from-indigo-600 hover:to-purple-500 text-white py-3 px-6 rounded-full" onclick="window.open('https://upmsp.edu.in/ResultHighSchool.aspx', '_blank')">Check Result</button>
                 </div>
             </div>
-            <div class="bg-gradient-to-r from-yellow-500 via-red-200 to-purple-300 rounded-lg overflow-hidden shadow-md p-6 transform hover:scale-105 transition duration-300">
-                <div class="logo bg-gradient-to-r from-yellow-500 via-red-200 to-purple-300">
-                    <img class="h-40 w-fit object-fit md:h-40 w-fit shadow-sl px-2  " src="logo.png " display:flex aria-colspan="rounded-full" alt="12th Result">
+            <div class="card-gradient rounded-lg shadow-xl p-6 transform hover:scale-105 transition duration-300 card-hover">
+                <div class="flex justify-center mb-6">
+                    <img class="h-48 w-auto object-cover rounded-full shadow-lg bg-red" src="logo.png" alt="12th Result">
                 </div>
-                <div class="p-6 bg-gradient-to-r from-yellow-500 via-red-200 to-purple-300">
-                    <h3 class="text-xl font-semibold text-indigo-500 mb-2 bg-gradient-to-r from-yellow-500 via-red-200 to-purple-300">12th Result</h3>
-                    <p class="text-gray-600 mb-4 bg-gradient-to-r from-yellow-500 via-red-200 to-purple-300">Enter your roll number and view your Marks.</p>
-                    <!-- Updated button with reference link -->
-                    <button class="bg-indigo-500 hover:bg-green-300 text-white py-2 px-4 rounded-full " onclick="window.open('https://upmsp.edu.in/ResultIntermediate.aspx', '_blank')">Check Result</button>
+                <div class="text-center">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">12th Result</h3>
+                    <p class="text-gray-700 mb-6">Enter your roll number and view your Marks.</p>
+                    <button class="bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-indigo-600 hover:to-purple-500 text-white py-3 px-6 rounded-full" onclick="window.open('https://upmsp.edu.in/ResultIntermediate.aspx', '_blank')">Check Result</button>
                 </div>
             </div>
         </div>
     </div>
-     <footer class="bg-gray">
-        <div class="bg-gray-100">
-            <div class="col-md-12 text-justify mx-auto mt-8 ">
-                <div class="bg-gray shadow-md rounded px-8 pt-6 pb-4 mb-4  ">
-                    <h3 class="text-lg font-bold mb-4 ">सन्देश :</h3>
-                    <p class="text-sm text-gray-700 mb-4 ">माध्यमिक शिक्षा परिषद्, उत्तर प्रदेश, प्रयागराज हाईस्कूल एवं इण्टरमीडिएट स्तर की
-                        परीक्षाओं को संचालित करने वाली विश्व की एक सर्वौच्च संस्था है।</p>
-                    <p class="text-sm text-gray-700 mb-4 ">इस प्रगतिशील युग में नित नवीन तकनीक के उपयोग के बिना प्रगति की कल्पना भी नहीं की
-                        जा सकती है। माध्यमिक शिक्षा परिषद् द्वारा भी इसी पथ का अनुसरण करते हुए प्रथम बार
-                        अपने पारम्परिक परिवेश से बाहर निकल कर नवीन तकनीकी को अपनाते हुए शैक्षिक सत्र 2013-2014
-                        से अग्रिम पंजीकरण की समस्त कार्यवाहियों को इस नवसृजित वेबसाइट के माध्यम से ऑनलाइन
-                        कराया गया, जो कि शतप्रतिशत सफल रहा था। इससे परिषदीय कार्यों की गुणवत्ता एवं विश्वसनीयता
-                        में आशातीत वृद्धि हुई। इस सफलता के लिये हम प्रदेश के समस्त शिक्षाधिकारियों एवं समस्त
-                        संस्थाओं के प्रधानाचार्यो आदि का विशेष आभार व्यक्त करते है।</p>
-                    <p class="text-sm text-gray-700 mb-4  ">गत वर्ष की भाँति वर्तमान शैक्षिक सत्र 2023-24 के कक्षा-9 एवं कक्षा-11 के छात्र/
-                        छात्राओं का तथा हाईस्कूल एवं इण्टरमीडिएट वर्ष 2024 की परीक्षा में सम्मिलित होने
-                        वाले छात्र/ छात्राओं के शैक्षिक विवरणों को ऑनलाइन अपलोड कराया जा रहा है। इस महत्वपूर्ण
-                        कार्य में आप सभी का सहयोग अपेक्षित है।</p>
-                </div>
+
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto py-8 px-6">
+            <div class="text-justify">
+                <h3 class="text-xl font-bold mb-4">सन्देश :</h3>
+                <p class="text-sm mb-4">माध्यमिक शिक्षा परिषद्, उत्तर प्रदेश, प्रयागराज हाईस्कूल एवं इण्टरमीडिएट स्तर की परीक्षाओं को संचालित करने वाली विश्व की एक सर्वौच्च संस्था है।</p>
+                <p class="text-sm mb-4">इस प्रगतिशील युग में नित नवीन तकनीक के उपयोग के बिना प्रगति की कल्पना भी नहीं की जा सकती है। माध्यमिक शिक्षा परिषद् द्वारा भी इसी पथ का अनुसरण करते हुए प्रथम बार अपने पारम्परिक परिवेश से बाहर निकल कर नवीन तकनीकी को अपनाते हुए शैक्षिक सत्र 2013-2014 से अग्रिम पंजीकरण की समस्त कार्यवाहियों को इस नवसृजित वेबसाइट के माध्यम से ऑनलाइन कराया गया, जो कि शतप्रतिशत सफल रहा था। इससे परिषदीय कार्यों की गुणवत्ता एवं विश्वसनीयता में आशातीत वृद्धि हुई। इस सफलता के लिये हम प्रदेश के समस्त शिक्षाधिकारियों एवं समस्त संस्थाओं के प्रधानाचार्यो आदि का विशेष आभार व्यक्त करते है।</p>
+                <p class="text-sm mb-4">गत वर्ष की भाँति वर्तमान शैक्षिक सत्र 2023-24 के कक्षा-9 एवं कक्षा-11 के छात्र/ छात्राओं का तथा हाईस्कूल एवं इण्टरमीडिएट वर्ष 2024 की परीक्षा में सम्मिलित होने वाले छात्र/ छात्राओं के शैक्षिक विवरणों को ऑनलाइन अपलोड कराया जा रहा है। इस महत्वपूर्ण कार्य में आप सभी का सहयोग अपेक्षित है।</p>
             </div>
         </div>
     </footer>
-    
-    <footer class="bg-gradient-to-r from-green-300 to-green-600 text-white mt-1">
-        <div class="container mx-auto py-4 px-6 md:py-10 md:px-12 text-center">
-            <p class="text-lg font-bold text-gray-700">© 2024 Saurabh Tiwari. All rights reserved.</p>
+
+    <footer class="bg-gradient-to-r from-purple-600 to-indigo-700 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p class="text-lg font-bold">© 2024 Saurabh Tiwari. All rights reserved.</p>
         </div>
     </footer>
 
-   
-
     <script>
         // JavaScript functionalities can be added here
-        // For changing background color
-        document.body.style.backgroundColor = "#cffafe";
+        document.body.style.backgroundColor = "#f3f4f6";
     </script>
 
     <!-- Code injected by live-server -->
@@ -117,7 +136,7 @@
                 function refreshCSS() {
                     var sheets = [].slice.call(document.getElementsByTagName("link"));
                     var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
+                    for (var i = 0 < sheets.length; ++i) {
                         var elem = sheets[i];
                         var parent = elem.parentElement || head;
                         parent.removeChild(elem);
